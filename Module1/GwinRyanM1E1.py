@@ -9,8 +9,6 @@ Short Desc:   take temperature in celsius as user input, convert temp to Fahrenh
 
 """
 
-
-
 def celsiusToFahrenheit():
     userTemp = input("Enter the temperature in celsius you want converted to Fahrenheit: ")
     conversion  = ((9/5)*float(userTemp))+32
@@ -22,8 +20,3 @@ def celsiusToFahrenheit():
     """
 
 celsiusToFahrenheit()
-
-
-
-
- 
