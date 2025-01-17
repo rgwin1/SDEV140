@@ -26,7 +26,7 @@ def billCalculator():
     tax = float(bill) * taxRate
     billWithTax = float(bill) + tax
     tip = billWithTax * tipPercentage
-    total = billWithTax + tip
+    total = round((billWithTax + tip), 2)
     print(f"Your total is ${total}.")
     
 
