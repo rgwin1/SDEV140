@@ -18,7 +18,7 @@ def cube():
     print("The surface area of the cube is: " + str(surfaceArea))
     
     """
-    This function finds the surface area of a cube with a given length.
+    Finds the surface area of a cube with a given length.
     To find the surface area of a cube, the length of one edge is measured. 
     The length is squared to find the area of a single face.
     Then that number is multiplied by the number of faces on a cube, which is 6.
@@ -29,9 +29,9 @@ def cube():
         INT surfaceArea
         
     FUNCTION cube
-        intCubeEdge = input("Enter the length of edge of the cube as an integer: ")
+        intCubeEdge = INPUT("Enter the length of edge of the cube as an integer: ")
         surfaceArea = (length ^ 2) * 6     
-        print("Surface area of the cube is: " + surfaceArea)
+        OUTPUT "Surface area of the cube is: " + surfaceArea
     """
 
 cube()
