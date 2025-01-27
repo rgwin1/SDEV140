@@ -18,7 +18,6 @@ Write a program in a file named tidbit.py that takes the purchase price as input
 The amount of interest for a month is equal to balance *  rate / 12. The amount of principal for a month is equal to the monthly payment minus the interest owed. 
 """
 
-
 #declare variables
 month = 1
 annualRate = 0.12
@@ -37,7 +36,6 @@ def isFloat(fltPurchasePrice):
     if user input isn't able to be converted to float,
     sends an error message and returns false for use in the while loop
     """
-
     try: 
         #convert user input into floating point value
         fltPurchasePrice = float(fltPurchasePrice)
@@ -52,7 +50,7 @@ def isFloat(fltPurchasePrice):
 fltPurchasePrice = isFloat(fltPurchasePrice); 
    
 #prevent user from entering string values
-while (isFloat(fltPurchasePrice) == False):
+while (isFloat(fltPurchasePrice) == False) or (isFloat(fltPurchasePrice) < 0):
      fltPurchasePrice = input("Please enter the price in the format 0.00: ")
      fltPurchasePrice = isFloat(fltPurchasePrice)
      
@@ -86,9 +84,3 @@ while balance > 0:
     #setup variables for next iteration
     balance = remaining
     month += 1
-
-
-
-
-
-
