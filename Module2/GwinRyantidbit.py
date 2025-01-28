@@ -29,7 +29,7 @@ monthlyPaymentRate = 0.05
 #get input from user, fltPurchaseprice
 fltPurchasePrice = input("Enter the original purchase price: ")
 
-#type check, make sure user input is a float, this is a function definition (DONT FORGET DOCSTRING)
+#type check
 def isFloat(fltPurchasePrice):
     """
     Converts user input from string to float
