@@ -10,7 +10,7 @@ write a program that allows a user to enter a nonnegative integer, then uses a l
 
 #take user input, should be a positive integer
 factorial = input("Enter a nonnegative whole number: ")
-check = factorial.isdigit()
+check = factorial.isdigit() 
 if (check == True):
     factorial = int(factorial)
 else: 
@@ -27,6 +27,3 @@ for num in range(1, factorial + 1):
     total *= num
     
 print(f"{factorial}! is {total}.")
-
-
-
