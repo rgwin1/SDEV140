@@ -11,15 +11,15 @@ import random
 
 
 #get user input to determine how many numbers will be written to the file and printed to the console
-totalNums = input("enter total integer entries that will be written to the file: ")
+totalNums = input("Please enter the total number of random integers you want to write to the file: ")
 
 #validation check
 while totalNums.isdigit() == False:
-    totalNums = input("enter total integer entries that will be written to the file: ")
+    totalNums = input("Please enter the total number of random integers you want to write to the file: ")
 
 totalNums = int(totalNums)
-#generate array of random numbers. for the moment, testing logic
-randomNumbers = [random.randint(0, 500) for _ in range(1, totalNums + 1)]
+#generate array of random numbers. 
+randomNumbers = [random.randint(0, 500) for randomNumber in range(1, totalNums + 1)]
 # print(randomNumbers)
 with open("randomNumbers.txt", "w") as file:
     for number in randomNumbers:
