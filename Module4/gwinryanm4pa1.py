@@ -20,7 +20,13 @@ def is_prime(n):
     return True  
 
 #get user input for an integer value
-num = int(input("Enter an integer greater than 1: "))
+num = input("Enter an integer greater than 1: ")
+if (num.isdigit() == True):
+    num = int(num)
+else:
+    while ((num.isdigit() == True) and (int(num) <= 1) or (num.isdigit() == False)):
+        num = input("Please enter an integer value greater than 1: ")
+    num = int(num)
 
 # Create a list of numbers from 2 up to the user-entered number (inclusive)
 numList = list(range(2, num + 1))
