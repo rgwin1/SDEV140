@@ -4,7 +4,8 @@ Date Written: 02/08/2025
 
 Description: 
 This program finds the top three most expensive items in a shop. 
-It stores item prices in a dictionary, converts it into a sortable list, and sorts the list in descending order using a function. 
+It stores item prices in a dictionary, converts it into a sortable list, 
+and sorts the list in descending order using a function. 
 Finally, it prints the three most expensive items with their prices.
 """
 
