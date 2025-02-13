@@ -20,7 +20,7 @@ def calculate_total_tax():
             return True
         except ValueError:
             return False
-    #validate user input.  If not float, then reprompt for user-input until float 
+    #validate user input.  If not float, then reprompt for user-input until float and greater than 0.00 
     if (is_float(total_sales) == True) and (float(total_sales) > 0):
         total_sales = float(total_sales)
     else:
