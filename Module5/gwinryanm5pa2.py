@@ -1,23 +1,36 @@
-# Step 1: Import the necessary module for generating random numbers.
+"""
+Author: Ryan Gwin
+Date Written: 02/16/2025
 
-# Step 2: Define a function to handle the game logic.
+Description: Guessing game.  Computer generates a random number between 1 and 100.
+User guesses number. If number too low, or too high, user guesses again.  User guesses,
+until correct number guesed. User gets to play again if user chooses.
 
-# Step 3: Inside the function, generate a random number between 1 and 100.
 
-# Step 4: Create a loop that allows the user to keep guessing until they get the correct number.
+"""
 
-# Step 5: Prompt the user for input and store their guess.
 
-# Step 6: Convert the user input to an integer for comparison.
 
-# Step 7: Check if the guess is higher, lower, or correct:
-#         - If higher, display "Too high, try again."
-#         - If lower, display "Too low, try again."
-#         - If correct, congratulate the user.
+import random
 
-# Step 8: If the user guesses correctly, generate a new random number 
-#         and restart the game loop automatically.
+def guessing_game():
+    """
+    generates a random number between 1 and 100 and prompts the user to guess it.
+    provides feedback on whether the guess is too high or too low and restarts upon correct guess.
+    """
+    number=random.randint(1, 100)
+    while True:
+        try:
+            guess=int(input("Guess a number between 1 and 100: "))
+            if guess<number:
+                print("Too low, try again.")
+            elif guess>number:
+                print("Too high, try again.")
+            else:
+                print("Congratulations! You guessed the correct number.")
+                number=random.randint(1, 100)  #restart the game with a new number
+        except ValueError:
+            print("Invalid input. Please enter a number between 1 and 100.")
 
-# Step 9: Ensure the program continues running, allowing multiple rounds of play.
-
-# Step 10: Call the function to start the game.
+#start the game
+guessing_game()
