@@ -6,9 +6,6 @@ Description:
 Recursion to print each element in a sequence, and tracks arguments.
 
 """
-
-
-
 def printAll(seq):
     """
     Recursively prints each element in a sequence while tracking arguments.
@@ -22,3 +19,5 @@ def printAll(seq):
 
 #testing the function
 printAll([1, 2, 3, 4, 5])  
+printAll([3,4,5,6,7,8,9,10])
+printAll([10, 11, 12, 13, 14, 15])
