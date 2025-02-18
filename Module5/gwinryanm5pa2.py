@@ -19,7 +19,9 @@ def guessing_game():
     provides feedback on whether the guess is too high or too low and restarts upon correct guess.
     """
     number=random.randint(1, 100)
-    while True:
+    answerchoices = ['Y', 'N']
+    answer = 'Y'
+    while (answer == 'Y'):
         try:
             guess=int(input("Guess a number between 1 and 100: "))
             if guess<number:
@@ -29,6 +31,12 @@ def guessing_game():
             else:
                 print("Congratulations! You guessed the correct number.")
                 number=random.randint(1, 100)  #restart the game with a new number
+                answer = input('Do you want to keep playing? Y for yes, N for No: ').upper()
+                while answer not in answerchoices:
+                    answer = input('You did not enter a valid response. Do you want to keep playing? Y for yes. N for No: ').upper()
+                
+                
+
         except ValueError:
             print("Invalid input. Please enter a number between 1 and 100.")
 
