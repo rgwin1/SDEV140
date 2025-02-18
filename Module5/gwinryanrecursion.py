@@ -18,6 +18,9 @@ def printAll(seq):
         printAll(seq[1:])
 
 #testing the function
-printAll([1, 2, 3, 4, 5])  
+print('Test Case 1: ')
+printAll([1, 2, 3, 4, 5])
+print('Test Case 2: ')
 printAll([3,4,5,6,7,8,9,10])
+print('Test Case 3: ')
 printAll([10, 11, 12, 13, 14, 15])
