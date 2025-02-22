@@ -6,11 +6,6 @@ Description:
 recreate the range() function
 
 """
-
-
-
-
-
 def myRange(start, stop=None, step=1):
     """
     A custom implementation of Python's range function that returns a list.
