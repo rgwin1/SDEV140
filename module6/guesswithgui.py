@@ -6,7 +6,6 @@ It narrows the range based on user input until the guess is inevitable correct. 
 start a new game.
 """
 
-
 from breezypythongui import EasyFrame
 import random
 
@@ -36,7 +35,6 @@ class App(EasyFrame):
         self.current_num = random.randint(self.low, self.high)
         self.label["text"] = f"Is the number {self.current_num}?"
 
-    
     def too_large(self):
         """tell computer that number is too large, reassign upper end, get new random int below upper end"""
         self.high = self.current_num - 1
@@ -47,7 +45,6 @@ class App(EasyFrame):
         self.current_num = random.randint(self.low, self.high)
         self.label["text"] = f"Is the number {self.current_num}?"
         
-
     def correct_number(self):
         """tell computer number guessed is correct, disable 3 other buttons, enable new_game button"""
         self.too_small_button["state"] = "disabled"
@@ -67,10 +64,6 @@ class App(EasyFrame):
         self.correct_button["state"] = "normal"
         self.new_game_button["state"] = "disabled"
         
-
-    
-    
-
 def main():
     App().mainloop()
 
