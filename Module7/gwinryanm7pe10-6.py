@@ -11,7 +11,6 @@ Define functions to play a single game interactively and multiple games with sta
 
 Instantiate a Player object, roll dice, and display game results based on player interactions.
 """
-
 from die import Die
 
 class Player(object):
@@ -68,8 +67,6 @@ class Player(object):
     def isLoser(self):
         """Returns True if the player has lost."""
         return self.loser
-
-
 
 #defined outside of the player class
 def playOneGame():
